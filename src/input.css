@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url("cursive.ttf");
+
+@theme {
+    --font-cursive: "cursive";
+    --animate-fade-up: fade 4s infinite ease-out;
+    @keyframes fade{
+        0%{
+            transform: translateY(40px);
+            opacity: 0;
+        }
+        30%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    --animate-fade-down: faded 4s infinite ease-in;
+    @keyframes faded{
+        0%{
+            transform: translateX(-40px);
+            opacity: 0;
+        }
+        30%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    --animate-rotate-y: rotate 10s infinite;
+    @keyframes rotate{
+        0%{
+            transform: rotateY(360deg);
+        }
+        5%{
+            transform: rotateY(-360deg);
+        }
+        30%{
+            opacity:0;
+        }
+        35%{
+            opacity: 1;
+        }
+        100%{
+            transform: rotateY(-360deg);
+        }
+    }
+}
